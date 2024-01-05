@@ -31,7 +31,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Username"/>
                                 <connections>
-                                    <action selector="forgotUserName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SUP-eO-q3M"/>
+                                    <action selector="forgotU:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qzw-hc-SP0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xa2-mH-tKh">
@@ -40,7 +40,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password"/>
                                 <connections>
-                                    <action selector="forgotPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6dQ-Yb-jMn"/>
+                                    <action selector="forgotP:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2dU-z3-SWS"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oGk-c1-k0l">
@@ -55,6 +55,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="tA8-3H-tDm"/>
                     <connections>
+                        <outlet property="forgotPassword" destination="Xa2-mH-tKh" id="yML-2O-xkp"/>
+                        <outlet property="forgotUsername" destination="Iuj-Oi-Y7R" id="BbT-6l-QH3"/>
                         <outlet property="username" destination="oGk-c1-k0l" id="SN3-bI-YXQ"/>
                         <segue destination="UMM-zB-BFx" kind="show" identifier="Segway1" id="0ac-Kb-w8d"/>
                     </connections>
